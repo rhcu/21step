@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "702487601475",
+    "firebase_url": "https://myfirebaseapp-2e292.firebaseio.com",
+    "project_id": "myfirebaseapp-2e292",
+    "storage_bucket": "myfirebaseapp-2e292.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702487601475:android:9cce1700fcefbad1",
+        "android_client_info": {
+          "package_name": "com.example.a21steps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702487601475-6a59ejp8g3gfbvae0kcv4lc8mj283m78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqlrJlAuhWQXLgOLgkA3wVteU2BDH-KYs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
