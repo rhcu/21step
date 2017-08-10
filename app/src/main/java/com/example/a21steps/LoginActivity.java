@@ -1,9 +1,12 @@
 package com.example.a21steps;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,6 +24,11 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final EditText etUsername = (EditText) findViewById(R.id.editTextNickname);
         final EditText etPassword = (EditText) findViewById(R.id.editTextPassword);
@@ -41,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
                 final String username = etUsername.getText().toString();
                 final String password = etPassword.getText().toString();
 
-                // Response received from the server
+// Response received from the server
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -53,16 +61,24 @@ public class LoginActivity extends AppCompatActivity {
                                 String name = jsonResponse.getString("name");
                                 int age = jsonResponse.getInt("age");
 
+                                SharedPreferences userInfo = getSharedPreferences("USER_INFO", Context.MODE_PRIVATE);
+                                SharedPreferences.Editor editor = userInfo.edit();
+                                editor.putString("name", name);
+                                editor.putInt("age", age);
+                                editor.putString("username", username);
+                                editor.putString("password", password);
+                                editor.apply();
+
                                 Intent intent = new Intent(LoginActivity.this, UserAreaActivity.class);
-                                intent.putExtra("name", name);
-                                intent.putExtra("age", age);
-                                intent.putExtra("username", username);
                                 LoginActivity.this.startActivity(intent);
+
+                                finish();
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-                                builder.setMessage("Login Failed")
-                                        .setNegativeButton("Retry", null)
-                                        .create()
+                                builder.setTitle("Ошибка")
+                                        .setMessage("Неверный логин или пароль")
+                                        .setNegativeButton("Попробуйте снова", null)
+                                        .setIcon(R.drawable.ic_error_white_24dp)
                                         .show();
                             }
 
@@ -77,13 +93,6 @@ public class LoginActivity extends AppCompatActivity {
                 queue.add(loginRequest);
             }
         });
-        tvRegisterLink.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }
+

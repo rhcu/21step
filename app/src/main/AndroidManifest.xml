@@ -18,7 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".RegisterActivity"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.a21steps.LoginActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".UserAreaActivity"></activity>
     </application>

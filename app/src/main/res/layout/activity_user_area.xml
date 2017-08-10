@@ -25,9 +25,6 @@
         android:id="@+id/tvWelcomeMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:text="Здравствуй, юный друг!"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -35,41 +32,33 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/tvWelcomeMsg"
         android:text="Username"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <EditText
-        android:id="@+id/etUsername"
+    <TextView
+        android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView"
-        android:editable="false" />
+
+        />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/etUsername"
         android:text="Age"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <EditText
-        android:id="@+id/etAge"
+    <TextView
+        android:id="@+id/tvAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView2" />
+ />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start" />
 
 </LinearLayout>
