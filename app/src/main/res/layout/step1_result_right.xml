@@ -20,7 +20,7 @@
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintVertical_bias="0.495" />
+        app:layout_constraintVertical_bias="0.604" />
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="91dp"
@@ -35,7 +35,7 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.131" />
 
     <TextView
         android:id="@+id/textView4"
@@ -94,7 +94,7 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonNextStep"
         android:layout_width="110dp"
         android:layout_height="35dp"
         android:layout_marginBottom="8dp"
