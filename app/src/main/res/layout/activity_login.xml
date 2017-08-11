@@ -4,15 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context="com.example.a21steps.LoginActivity"
     android:orientation="vertical">
-
 
     <ImageView
         android:id="@+id/childrenImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/login_children" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:gravity="center"
+        android:text="21 ШАГ"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:gravity="center"
+        android:text="Добро пожаловать, мой юный друг!"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="18sp" />
+
 
     <EditText
         android:id="@+id/editTextNickname"
@@ -22,6 +48,7 @@
         android:layout_height="54dp"
         android:ems="10"
         android:hint="Никнэйм"
+        android:textColorHint="@color/hintColor"
         android:inputType="textPersonName" />
 
     <EditText
@@ -32,7 +59,9 @@
         android:layout_height="54dp"
         android:ems="10"
         android:hint="Пароль"
+        android:textColorHint="@color/hintColor"
         android:inputType="textPassword" />
+
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
@@ -43,16 +72,18 @@
         android:layout_marginRight="8dp"
         android:textColor="@color/textColor"
         android:layout_marginStart="140dp"
-        android:background="@drawable/shape"
+        android:background="@drawable/circled_corner_button"
         android:layout_marginTop="8dp"
         android:text="Войти"
         app:layout_constraintVertical_bias="0.614" />
 
     <TextView
         android:id="@+id/tvRegisterLink"
-        android:layout_width="340dp"
+        android:layout_width="272dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginStart="50dp"
-        android:text="Еще нет аккаунта? Нажми здесь, чтобы зарегистрироваться" />
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:text="Еще нет аккаунта? Нажми здесь, чтобы зарегистрироваться." />
 </LinearLayout>

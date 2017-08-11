@@ -6,6 +6,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/map">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="408dp"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/textColor"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="251dp"
@@ -19,7 +45,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="0.385"
+        app:layout_constraintVertical_bias="0.791"
         app:layout_constraintHorizontal_bias="0.504" />
     <ImageView
         android:id="@+id/imageView3"
@@ -34,7 +60,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.116" />
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
@@ -92,8 +118,8 @@
         app:layout_constraintVertical_bias="1.0"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-    <CheckBox
-        android:id="@+id/checkBoxVar1"
+    <RadioButton
+        android:id="@+id/radioButtonVar1"
         android:layout_width="234dp"
         android:layout_height="79dp"
         android:text="@string/step2_answer1"
@@ -102,51 +128,49 @@
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         android:layout_marginBottom="8dp"
+        android:buttonTint="@color/default_color"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="@+id/imageView2"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintVertical_bias="0.075"
-        tools:layout_editor_absoluteX="79dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.084" />
 
-    <CheckBox
-        android:id="@+id/checkBoxVar2"
+    <RadioButton
+        android:id="@+id/radioButtonVar2"
         android:layout_width="237dp"
         android:layout_height="100dp"
         android:textSize="16sp"
         android:text="@string/step2_answer2"
         android:layout_marginTop="12dp"
         android:textColor="@color/textColor"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxVar1"
+        android:buttonTint="@color/default_color"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonVar1"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="@+id/imageView2"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="76dp" />
-    <CheckBox
-        android:id="@+id/checkBoxVar3"
+        app:layout_constraintVertical_bias="0.0" />
+    <RadioButton
+        android:id="@+id/radioButtonVar3"
         android:layout_width="237dp"
         android:layout_height="100dp"
         android:textSize="16sp"
         android:text="@string/step2_answer3"
         android:layout_marginTop="12dp"
         android:textColor="@color/textColor"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxVar2"
+        android:buttonTint="@color/default_color"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonVar2"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="@+id/imageView2"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="76dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </android.support.constraint.ConstraintLayout>

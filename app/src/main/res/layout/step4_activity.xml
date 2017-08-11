@@ -79,7 +79,7 @@
         android:layout_marginTop="8dp"
         android:textColor="@color/titleColor"
         android:textStyle="bold"
-        android:text="Шаг 3"
+        android:text="Шаг 4"
         android:textSize="13sp"
         app:layout_constraintLeft_toLeftOf="@+id/imageViewRectangle"
         app:layout_constraintRight_toLeftOf="@+id/imageViewSituation"

@@ -28,8 +28,9 @@ public class RegisterActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if(getSupportActionBar()!=null){
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);}
 
         final TextView tvLoginLink = (TextView)findViewById(R.id.textViewAlreadyRegistered);
         tvLoginLink.setOnClickListener(new View.OnClickListener(){
@@ -59,8 +60,8 @@ public class RegisterActivity extends AppCompatActivity {
                             .show();
                 } else {
                     final String name = etName.getText().toString();
-                    final String username = etUsername.getText().toString();
                     final int age = Integer.parseInt(etAge.getText().toString());
+                    final String username = etUsername.getText().toString();
                     final String password = etPassword.getText().toString();
 
                     Response.Listener<String> responseListener = new Response.Listener<String>() {
