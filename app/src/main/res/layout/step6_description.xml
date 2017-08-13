@@ -10,23 +10,25 @@
         android:layout_width="408dp"
         android:layout_height="54dp"
         android:background="@color/colorPrimaryDark"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="0dp">
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:layout_gravity="center"
             android:text="@string/app_name"
             android:textColor="@color/textColor"
             android:textSize="26sp"
-             />
+            />
     </android.support.v7.widget.Toolbar>
 
     <ImageView
@@ -52,7 +54,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="83dp"
         android:background="@drawable/circle"
-        android:text="5"
+        android:text="6"
         android:textColor="@color/default_color"
         android:textSize="50sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -68,8 +70,7 @@
         android:textSize="18sp"
         android:gravity="center"
         android:textColor="@color/textColor"
-        android:text="21 век - это век информации, поэтому очень важно уметь выбирать достоверную информацию из всего информационного потока, получаемого нами каждый день.
- Но что же такое достоверная информация?"
+        android:text="Денежные отношения в 21 веке являются неотъемлемой частью, поэтому очень важно уметь правильно распоряжаться деньгами и знать основы финансовой грамотности."
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="0dp"
