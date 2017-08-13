@@ -91,7 +91,7 @@
         android:textColor="@color/textColor"
         android:background="@drawable/circled_corner_button"
         android:text="@string/info"
-        android:onClick="onClick"
+
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintLeft_toLeftOf="parent"
