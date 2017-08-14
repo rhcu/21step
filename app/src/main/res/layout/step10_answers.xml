@@ -70,7 +70,7 @@
         android:layout_marginTop="8dp"
         android:textColor="@color/titleColor"
         android:textStyle="bold"
-        android:text="Шаг 7"
+        android:text="Шаг 10"
         android:textSize="13sp"
         app:layout_constraintLeft_toLeftOf="@+id/imageView2"
         app:layout_constraintRight_toLeftOf="@+id/imageView3"
@@ -120,11 +120,19 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="191dp">
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintVertical_bias="0.524">
 
         <RadioButton
-            android:id="@+id/radioButtonStep8Wrong"
+            android:id="@+id/radioButtonStep10Wrong"
             android:layout_width="234dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -132,7 +140,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:buttonTint="@color/default_color"
-            android:text="@string/step8_wrong_answer"
+            android:text="@string/step10_wrong_answer"
             android:textColor="@color/textColor"
             android:textSize="13.5sp"
             app:layout_constraintBottom_toTopOf="@+id/button2"
@@ -143,15 +151,15 @@
             app:layout_constraintVertical_bias="0.024" />
 
         <RadioButton
-            android:id="@+id/radioButtonStep8Right"
+            android:id="@+id/radioButtonStep10Right"
             android:layout_width="237dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="29dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="8dp"
             android:buttonTint="@color/default_color"
-            android:text="@string/step8_right_answer"
+            android:text="@string/step10_right_answer"
             android:textColor="@color/textColor"
             android:textSize="13.5sp"
             app:layout_constraintBottom_toTopOf="@+id/button2"
@@ -160,23 +168,7 @@
             app:layout_constraintTop_toBottomOf="@+id/radioButtonVar1"
             app:layout_constraintVertical_bias="0.0" />
 
-        <RadioButton
-            android:id="@+id/radioButtonStep8Medium"
-            android:layout_width="237dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="97dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="12dp"
-            android:buttonTint="@color/default_color"
-            android:text="@string/step8_medium_answer"
-            android:textColor="@color/textColor"
-            android:textSize="13.5sp"
-            app:layout_constraintBottom_toTopOf="@+id/button2"
-            app:layout_constraintLeft_toLeftOf="@+id/imageView2"
-            app:layout_constraintRight_toRightOf="@+id/imageView2"
-            app:layout_constraintTop_toBottomOf="@+id/radioButtonVar1"
-            app:layout_constraintVertical_bias="0.0" />
+
     </RadioGroup>
 
 
