@@ -78,7 +78,7 @@
         android:layout_marginTop="8dp"
         android:textColor="@color/titleColor"
         android:textStyle="bold"
-        android:text="Шаг 9"
+        android:text="Шаг 12"
         android:textSize="13sp"
         app:layout_constraintLeft_toLeftOf="@+id/imageViewRectangle"
         app:layout_constraintRight_toLeftOf="@+id/imageViewSituation"
@@ -120,8 +120,8 @@
         android:text="@string/back"
         android:textColor="@color/textColor"
         android:textStyle="bold"
-
         android:onClick="onClick"
+
         app:layout_constraintBottom_toBottomOf="@+id/imageViewRectangle"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -139,7 +139,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
 
-       android:onClick="onClick"
+        android:onClick="onClick"
 
         android:background="@drawable/circled_corner_button"
         android:text="@string/next"
@@ -158,7 +158,7 @@
         android:id="@+id/textViewSituation"
         android:layout_width="226dp"
         android:layout_height="232dp"
-        android:text="@string/step9_activity"
+        android:text="@string/step12_activity"
         android:gravity="center"
         android:textColor="@color/textColor"
         android:layout_marginTop="8dp"
