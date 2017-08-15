@@ -10,4 +10,5 @@
     <color name="background">#3F8CF3</color>
     <color name="hintColor">#E0E0E0</color>
     <color name="default_color">#fdfdfd</color>
+    <color name="finish">#a072f1</color>
 </resources>
