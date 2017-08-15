@@ -222,16 +222,18 @@
     <string name="step16_wrong_feedback">Да, твоя гордыня будет рада, но будешь ли ты, находясь в плохих отношениях с одним из самых близких людей? Лучше попробовать проявить инициативу в примирении, потому что, скорее всего, она тоже хочет этого. </string>
     <string name="step16_right_feedback">Молодец, ты знаешь, что семья важнее гордыни и принципов, поэтому попытаешься пойти на примирение.</string>
 
-    <string name="step17_description"></string>
-    <string name="step17_info_part1"></string>
-    <string name="step17_info_part2"></string>
-    <string name="step17_activity"></string>
-    <string name="step17_wrong_answer"></string>
-    <string name="step17_right_answer"></string>
-    <string name="step17_wrong_feedback"></string>
-    <string name="step17_right_feedback"></string>
+    <string name="step17_description">Один из неотъемлемых навыков 21-ого века - критическое мышление. Что это такое?</string>
+    <string name="step17_info_part1">Критическое мышление объединяет в себя некоторое количество навыков, которые помогают в принятии решений, и умение оценивать информацию для определения ее верности.</string>
+    <string name="step17_info_part2">Думать критически над проблемой означает думать нестандартно и рассматривать альтернативные методы решений. Читай больше литературы (к примеру, мы можем посоветовать тебе книгу "Основы критического мышления" Г. Бекахметова и А. Коржумбаевой), чтобы научиться мыслить яснее и улучшить свое критическое мышление.</string>
+    <string name="step17_activity">Даны два утверждения и вывод. 1. Некоторые садовые растения имеют красивые цветы. 2. Некоторые деревья - садовые растения.
+Значит (вывод): некоторые деревья имеют красивые цветы.
+Правильно ли сделан этот вывод?</string>
+    <string name="step17_wrong_answer">Да</string>
+    <string name="step17_right_answer">Нет</string>
+    <string name="step17_wrong_feedback">Оба утверждения о некоторых объектах, а не о всех. Значит, вывод неверный. В данном примере некоторые деревья могут иметь, а могут не иметь красивые цветы, потому что деревья могут быть и не садовыми.</string>
+    <string name="step17_right_feedback">Молодец! Проверь, насколько отличается твое решение от верного: в данном примере некоторые деревья могут иметь, а могут не иметь красивые цветы, потому что деревья могут быть и не садовыми.</string>
 
-    <string name="step18_description"></string>
+    <string name="step18_description">Ты знаешь, что такое медиаграмотность?</string>
     <string name="step18_info_part1"></string>
     <string name="step18_info_part2"></string>
     <string name="step18_activity"></string>
@@ -248,6 +250,7 @@
     <string name="step19_right_answer"></string>
     <string name="step19_wrong_feedback"></string>
     <string name="step19_right_feedback"></string>
+
     <string name="clear">Всё понятно!</string>
 
     <string name="excercise">Нажми сюда, чтобы пройти задание!</string>

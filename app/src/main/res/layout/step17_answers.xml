@@ -70,7 +70,7 @@
         android:layout_marginTop="8dp"
         android:textColor="@color/titleColor"
         android:textStyle="bold"
-        android:text="Шаг 16"
+        android:text="Шаг 17"
         android:textSize="13sp"
         app:layout_constraintLeft_toLeftOf="@+id/imageView2"
         app:layout_constraintRight_toLeftOf="@+id/imageView3"
@@ -134,7 +134,7 @@
 
 
         <RadioButton
-            android:id="@+id/radioButtonStep16Right"
+            android:id="@+id/radioButtonStep17Right"
             android:layout_width="237dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -142,7 +142,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:buttonTint="@color/default_color"
-            android:text="@string/step16_right_answer"
+            android:text="@string/step17_right_answer"
             android:textColor="@color/textColor"
             android:textSize="13.5sp"
             app:layout_constraintBottom_toTopOf="@+id/button2"
@@ -151,7 +151,7 @@
             app:layout_constraintTop_toBottomOf="@+id/radioButtonVar1"
             app:layout_constraintVertical_bias="0.0" />
         <RadioButton
-            android:id="@+id/radioButtonStep16Wrong"
+            android:id="@+id/radioButtonStep17Wrong"
             android:layout_width="234dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -159,7 +159,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:buttonTint="@color/default_color"
-            android:text="@string/step16_wrong_answer"
+            android:text="@string/step17_wrong_answer"
             android:textColor="@color/textColor"
             android:textSize="13.5sp"
             app:layout_constraintBottom_toTopOf="@+id/button2"
