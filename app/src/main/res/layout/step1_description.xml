@@ -4,38 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/map">
+    android:background="@drawable/map"
+    tools:context="com.enotik.a21steps.Step1Descr">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
-        android:layout_width="408dp"
+        android:layout_width="0dp"
         android:layout_height="54dp"
         android:background="@color/colorPrimaryDark"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:gravity="center"
             android:text="@string/app_name"
             android:textColor="@color/textColor"
-            android:textSize="26sp"
-            android:textStyle="bold" />
+            android:textSize="26sp" />
+
     </android.support.v7.widget.Toolbar>
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="264dp"
-        android:layout_height="418dp"
+        android:layout_height="387dp"
         app:srcCompat="@drawable/shape"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
         android:layout_marginTop="8dp"
@@ -45,7 +44,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintVertical_bias="0.687" />
+        app:layout_constraintVertical_bias="0.347" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -93,24 +92,25 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="239dp"
-        android:layout_height="40dp"
+        android:layout_width="231dp"
+        android:layout_height="79dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:textSize="18sp"
+        android:layout_marginTop="17dp"
         android:gravity="center"
-        android:textColor="@color/textColor"
         android:text="Первый урок будет очень легким, но важным. "
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintLeft_toLeftOf="@+id/imageView2"
         app:layout_constraintRight_toRightOf="@+id/imageView2"
-        android:layout_marginTop="2dp"
-        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="235dp"
-        android:layout_height="163dp"
+        android:layout_width="233dp"
+        android:layout_height="142dp"
         android:text="Во время регистрации ты создал пароль, а знаешь ли ты, что это такое?"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="@+id/imageView2"
@@ -123,7 +123,8 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.281" />
+        app:layout_constraintVertical_bias="0.325"
+        app:layout_constraintHorizontal_bias="0.533" />
 
     <Button
         android:id="@+id/buttonInfo"
@@ -136,20 +137,19 @@
         android:textColor="@color/textColor"
         android:background="@drawable/circled_corner_button"
         android:text="@string/info"
-        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.619" />
+        app:layout_constraintVertical_bias="0.625" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="62dp"
         android:layout_height="62dp"
-        android:layout_marginRight="13dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="33dp"
         app:layout_constraintRight_toLeftOf="@+id/buttonInfo"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/info" />

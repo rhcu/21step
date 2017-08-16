@@ -4,17 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="com.enotik.a21steps.Step3Descr"
     android:background="@drawable/map">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
-        android:layout_width="408dp"
+        android:layout_width="0dp"
         android:layout_height="54dp"
         android:background="@color/colorPrimaryDark"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="0dp"
@@ -23,13 +21,14 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:gravity="center"
             android:text="@string/app_name"
             android:textColor="@color/textColor"
-            android:textSize="26sp"
-            android:textStyle="bold" />
+            android:textSize="26sp" />
+
     </android.support.v7.widget.Toolbar>
     <ImageView
         android:id="@+id/imageView2"
@@ -72,8 +71,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.075"
-        app:layout_constraintVertical_bias="0.641" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.547" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -111,18 +110,18 @@
         android:id="@+id/textView2"
         android:layout_width="235dp"
         android:layout_height="163dp"
-        android:text="@string/step3_description_part2"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
         android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
-        android:textSize="18sp"
+        android:text="@string/step3_description_part2"
         android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
         app:layout_constraintRight_toRightOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        android:layout_marginBottom="8dp"
         app:layout_constraintVertical_bias="0.246" />
 
     <Button
@@ -136,7 +135,6 @@
         android:textColor="@color/textColor"
         android:background="@drawable/circled_corner_button"
         android:text="@string/info"
-        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.661"
         app:layout_constraintLeft_toLeftOf="parent"

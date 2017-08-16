@@ -5,14 +5,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:background="@drawable/map"
+    tools:context="com.enotik.a21steps.Step3Wrong"
     android:layout_height="match_parent">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="408dp"
         android:layout_height="54dp"
         android:background="@color/colorPrimaryDark"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
@@ -24,13 +24,14 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:gravity="center"
             android:text="@string/app_name"
             android:textColor="@color/textColor"
-            android:textSize="26sp"
-            android:textStyle="bold" />
+            android:textSize="26sp" />
+
     </android.support.v7.widget.Toolbar>
     <ImageView
         android:id="@+id/imageView2"
@@ -67,39 +68,40 @@
         android:id="@+id/textView4"
         android:layout_width="234dp"
         android:layout_height="228dp"
-        android:text="@string/step3_wrong_feedback"
-        android:gravity="center"
-        android:textColor="@color/textColor"
-
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.688"
-        android:textSize="13.5sp"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/step3_wrong_feedback"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.688" />
+
     <TextView
         android:id="@+id/textViewRight"
         android:layout_width="232dp"
         android:layout_height="97dp"
-        android:textStyle="bold"
-        android:text="@string/wrong_answer"
-        android:gravity="center"
-        android:textColor="@color/textColor"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.304"
-        android:textSize="13.5sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/wrong_answer"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.503" />
+        app:layout_constraintVertical_bias="0.304" />
 
     <TextView
         android:id="@+id/textView5"

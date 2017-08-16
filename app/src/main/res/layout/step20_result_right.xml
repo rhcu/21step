@@ -8,12 +8,10 @@
     android:layout_height="match_parent">
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
-        android:layout_width="408dp"
+        android:layout_width="0dp"
         android:layout_height="54dp"
         android:background="@color/colorPrimaryDark"
-        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="0dp"
@@ -76,29 +74,30 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.659"
+        app:layout_constraintVertical_bias="0.713"
         android:textSize="13.5sp"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.503" />
+
     <TextView
         android:id="@+id/textViewRight"
         android:layout_width="231dp"
         android:layout_height="67dp"
-        android:text="@string/right_answer"
-        android:gravity="center"
-        android:textColor="@color/textColor"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:textStyle="bold"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.321"
-        android:textSize="13.5sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/right_answer"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.503" />
+        app:layout_constraintVertical_bias="0.292" />
 
     <TextView
         android:id="@+id/textView5"

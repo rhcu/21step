@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.a21steps">
+    package="com.enotik.a21steps">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,21 +11,947 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.enotik.a21steps.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"
-            android:parentActivityName=".LoginActivity"
-            android:screenOrientation="portrait"/>
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.a21steps.LoginActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".UserAreaActivity"></activity>
+        <activity
+            android:name="com.enotik.a21steps.RegisterActivity"
+            android:parentActivityName="com.enotik.a21steps.LoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.LoginActivity" />
+        </activity>
+        <activity android:name="com.enotik.a21steps.LoginActivity" />
+        <activity android:name="com.enotik.a21steps.UserAreaActivity" />
+        <activity
+            android:name="com.enotik.a21steps.Step1Activity"
+            android:parentActivityName="com.enotik.a21steps.Step1Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step1Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step1Answers"
+            android:parentActivityName="com.enotik.a21steps.Step1Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step1Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step1Descr"
+            android:parentActivityName="com.enotik.a21steps.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step1Info"
+            android:parentActivityName="com.enotik.a21steps.Step1Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step1Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step1Right"
+            android:parentActivityName="com.enotik.a21steps.Step1Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step1Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step1Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step1Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step1Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step2Activity"
+            android:parentActivityName="com.enotik.a21steps.Step2Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step2Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step2Ans"
+            android:parentActivityName="com.enotik.a21steps.Step2Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step2Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step2Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step2Info"
+            android:parentActivityName="com.enotik.a21steps.Step2Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step2Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step2Right"
+            android:parentActivityName="com.enotik.a21steps.Step2Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step2Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step2Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step2Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step2Info" />
+        </activity>
+        `
+        <activity
+            android:name="com.enotik.a21steps.Step2Medium"
+            android:parentActivityName="com.enotik.a21steps.Step1Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step2Info" />
+        </activity>
+        `
+        <activity
+            android:name="com.enotik.a21steps.Step3Activity"
+            android:parentActivityName="com.enotik.a21steps.Step3Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step3Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step3Ans"
+            android:parentActivityName="com.enotik.a21steps.Step3Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step3Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step3Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step3Info"
+            android:parentActivityName="com.enotik.a21steps.Step3Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step3Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step3Right"
+            android:parentActivityName="com.enotik.a21steps.Step3Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step3Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step3Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step3Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step3Info" />
+        </activity>
+        `
+        <activity
+            android:name="com.enotik.a21steps.Step3Medium"
+            android:parentActivityName="com.enotik.a21steps.Step3Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step3Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step4Activity"
+            android:parentActivityName="com.enotik.a21steps.Step4Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step4Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step4Ans"
+            android:parentActivityName="com.enotik.a21steps.Step4Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step4Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step4Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step4Info"
+            android:parentActivityName="com.enotik.a21steps.Step4Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step4Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step4Right"
+            android:parentActivityName="com.enotik.a21steps.Step4Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step4Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step4Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step4Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step4Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step5Activity"
+            android:parentActivityName="com.enotik.a21steps.Step5Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step5Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step5Ans"
+            android:parentActivityName="com.enotik.a21steps.Step5Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step5Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step5Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step5Info"
+            android:parentActivityName="com.enotik.a21steps.Step5Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step5Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step5Right"
+            android:parentActivityName="com.enotik.a21steps.Step5Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step5Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step5Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step5Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step5Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step6Activity"
+            android:parentActivityName="com.enotik.a21steps.Step6Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step6Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step6Ans"
+            android:parentActivityName="com.enotik.a21steps.Step6Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step6Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step6Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step6Info"
+            android:parentActivityName="com.enotik.a21steps.Step6Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step6Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step6Right"
+            android:parentActivityName="com.enotik.a21steps.Step6Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step6Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step6Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step6Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step6Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step7Activity"
+            android:parentActivityName="com.enotik.a21steps.Step7Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step7Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step7Ans"
+            android:parentActivityName="com.enotik.a21steps.Step7Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step7Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step7Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step7Info"
+            android:parentActivityName="com.enotik.a21steps.Step7Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step7Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step7Right"
+            android:parentActivityName="com.enotik.a21steps.Step7Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step7Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step7Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step7Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step7Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step8Activity"
+            android:parentActivityName="com.enotik.a21steps.Step8Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step8Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step8Ans"
+            android:parentActivityName="com.enotik.a21steps.Step8Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step8Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step8Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step8Info"
+            android:parentActivityName="com.enotik.a21steps.Step8Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step8Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step8Right"
+            android:parentActivityName="com.enotik.a21steps.Step8Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step8Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step8Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step8Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step8Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.AboutUs"
+            android:parentActivityName="com.enotik.a21steps.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Info"
+            android:parentActivityName="com.enotik.a21steps.AboutUs"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.AboutUs" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.UserProfile"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.enotik.a21steps.Step9Activity"
+            android:parentActivityName="com.enotik.a21steps.Step9Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step9Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step9Ans"
+            android:parentActivityName="com.enotik.a21steps.Step9Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step9Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step9Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step9Info"
+            android:parentActivityName="com.enotik.a21steps.Step9Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step9Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step9Right"
+            android:parentActivityName="com.enotik.a21steps.Step9Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step9Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step9Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step9Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step9Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step10Activity"
+            android:parentActivityName="com.enotik.a21steps.Step10Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step10Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step10Ans"
+            android:parentActivityName="com.enotik.a21steps.Step10Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step10Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step10Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step10Info"
+            android:parentActivityName="com.enotik.a21steps.Step10Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step10Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step10Right"
+            android:parentActivityName="com.enotik.a21steps.Step10Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step10Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step10Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step10Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step10Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step12Activity"
+            android:parentActivityName="com.enotik.a21steps.Step12Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step12Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step12Ans"
+            android:parentActivityName="com.enotik.a21steps.Step12Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step12Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step12Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step12Info"
+            android:parentActivityName="com.enotik.a21steps.Step12Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step12Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step12Right"
+            android:parentActivityName="com.enotik.a21steps.Step12Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step12Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step12Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step12Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step12Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step11Activity"
+            android:parentActivityName="com.enotik.a21steps.Step11Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step11Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step11Ans"
+            android:parentActivityName="com.enotik.a21steps.Step11Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step11Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step11Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step11Info"
+            android:parentActivityName="com.enotik.a21steps.Step11Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step11Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step11Right"
+            android:parentActivityName="com.enotik.a21steps.Step11Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step11Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step11Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step11Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step11Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step14Activity"
+            android:parentActivityName="com.enotik.a21steps.Step14Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step14Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step14Ans"
+            android:parentActivityName="com.enotik.a21steps.Step14Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step14Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step14Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step14Info"
+            android:parentActivityName="com.enotik.a21steps.Step14Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step14Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step14Right"
+            android:parentActivityName="com.enotik.a21steps.Step14Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step14Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step14Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step14Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step14Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step13Activity"
+            android:parentActivityName="com.enotik.a21steps.Step13Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step13Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step13Ans"
+            android:parentActivityName="com.enotik.a21steps.Step13Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step13Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step13Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step13Info"
+            android:parentActivityName="com.enotik.a21steps.Step13Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step13Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step13Right"
+            android:parentActivityName="com.enotik.a21steps.Step13Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step13Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step13Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step13Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step13Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step15Activity"
+            android:parentActivityName="com.enotik.a21steps.Step15Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step15Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step15Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step15Info"
+            android:parentActivityName="com.enotik.a21steps.Step15Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step15Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step16Activity"
+            android:parentActivityName="com.enotik.a21steps.Step16Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step16Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step16Ans"
+            android:parentActivityName="com.enotik.a21steps.Step16Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step16Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step16Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step16Info"
+            android:parentActivityName="com.enotik.a21steps.Step16Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step16Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step16Right"
+            android:parentActivityName="com.enotik.a21steps.Step16Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step16Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step16Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step16Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step16Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step17Activity"
+            android:parentActivityName="com.enotik.a21steps.Step17Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step17Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step17Ans"
+            android:parentActivityName="com.enotik.a21steps.Step17Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step17Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step17Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step17Info"
+            android:parentActivityName="com.enotik.a21steps.Step17Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step17Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step17Right"
+            android:parentActivityName="com.enotik.a21steps.Step17Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step17Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step17Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step17Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step17Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step18Activity"
+            android:parentActivityName="com.enotik.a21steps.Step18Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step18Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step18Ans"
+            android:parentActivityName="com.enotik.a21steps.Step18Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step18Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step18Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step18Info"
+            android:parentActivityName="com.enotik.a21steps.Step18Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step18Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step18Right"
+            android:parentActivityName="com.enotik.a21steps.Step18Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step18Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step18Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step18Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step18Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step19Activity"
+            android:parentActivityName="com.enotik.a21steps.Step19Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step19Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step19Ans"
+            android:parentActivityName="com.enotik.a21steps.Step19Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step19Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step19Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step19Info"
+            android:parentActivityName="com.enotik.a21steps.Step19Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step19Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step19Right"
+            android:parentActivityName="com.enotik.a21steps.Step19Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step19Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step19Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step19Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step19Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step20Activity"
+            android:parentActivityName="com.enotik.a21steps.Step20Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step20Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step20Ans"
+            android:parentActivityName="com.enotik.a21steps.Step20Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step20Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step20Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step20Info"
+            android:parentActivityName="com.enotik.a21steps.Step20Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step20Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step20Right"
+            android:parentActivityName="com.enotik.a21steps.Step20Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step20Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step20Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step20Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step20Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step21Activity"
+            android:parentActivityName="com.enotik.a21steps.Step21Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step21Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step21Ans"
+            android:parentActivityName="com.enotik.a21steps.Step21Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step21Activity" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step21Descr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enotik.a21steps.Step21Info"
+            android:parentActivityName="com.enotik.a21steps.Step21Descr"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step21Descr" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step21Right"
+            android:parentActivityName="com.enotik.a21steps.Step21Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step21Info" />
+        </activity>
+        <activity
+            android:name="com.enotik.a21steps.Step21Wrong"
+            android:parentActivityName="com.enotik.a21steps.Step21Info"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.enotik.a21steps.Step21Info" />
+        </activity>
+
+        <activity android:name="com.enotik.a21steps.Last"></activity>
     </application>
 
 </manifest>
