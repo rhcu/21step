@@ -53,26 +53,25 @@
         android:layout_width="91dp"
         android:layout_height="78dp"
         app:srcCompat="@drawable/wrong"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="234dp"
-        android:layout_height="228dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content"
+
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
 
-        android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="@string/step3_wrong_feedback"
         android:textColor="@color/textColor"
@@ -81,7 +80,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="0.683" />
 
     <TextView
         android:id="@+id/textViewRight"
@@ -97,11 +96,10 @@
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.304" />
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.215" />
 
     <TextView
         android:id="@+id/textView5"
@@ -115,12 +113,12 @@
         android:textStyle="bold"
         android:text="Шаг 3"
         android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintLeft_toLeftOf="@+id/textView4"
         app:layout_constraintRight_toLeftOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.31"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.425"
-        app:layout_constraintHorizontal_bias="0.25" />
+        app:layout_constraintBottom_toBottomOf="@+id/textViewRight" />
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -133,12 +131,12 @@
         android:textStyle="bold"
         android:text="Рефлексия"
         android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.425"
+        app:layout_constraintVertical_bias="0.869"
         app:layout_constraintHorizontal_bias="0.769"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/buttonNextStep"

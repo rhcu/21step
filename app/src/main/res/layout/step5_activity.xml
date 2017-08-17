@@ -53,18 +53,18 @@
         android:layout_width="102dp"
         android:layout_height="89dp"
         app:srcCompat="@drawable/situation"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewRectangle"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.14"
+        app:layout_constraintVertical_bias="0.019"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:contentDescription="@string/situation_image" />
+        android:contentDescription="@string/situation_image"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
     <TextView
         android:id="@+id/textViewStepNumber"
         android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
         app:layout_constraintRight_toLeftOf="@+id/imageViewSituation"
         app:layout_constraintTop_toTopOf="@+id/imageViewSituation"
         app:layout_constraintVertical_bias="0.666"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewSituation"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp" />

@@ -42,23 +42,22 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintVertical_bias="0.568"
+        app:layout_constraintVertical_bias="0.7"
         app:layout_constraintHorizontal_bias="0.504" />
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="91dp"
         android:layout_height="78dp"
         app:srcCompat="@drawable/wrong"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonNextStep"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintVertical_bias="0.079"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
 
     <TextView
         android:id="@+id/textView4"
@@ -75,10 +74,10 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.753" />
+        app:layout_constraintVertical_bias="0.748" />
 
     <TextView
         android:id="@+id/textViewRight"
@@ -93,11 +92,11 @@
         android:textColor="@color/textColor"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.323"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNextStep" />
 
     <TextView
         android:id="@+id/textView5"
@@ -111,12 +110,12 @@
         android:textStyle="bold"
         android:text="Шаг 21"
         android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintLeft_toLeftOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRight"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
         app:layout_constraintRight_toLeftOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.31"
-        app:layout_constraintHorizontal_bias="0.263" />
+        app:layout_constraintVertical_bias="0.846"
+        app:layout_constraintHorizontal_bias="0.285" />
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -130,11 +129,11 @@
         android:text="Рефлексия"
         android:textSize="13sp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.31"
-        app:layout_constraintHorizontal_bias="0.769"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintVertical_bias="0.239"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintRight_toRightOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/buttonNextStep"
@@ -149,9 +148,9 @@
         android:textColor="@color/textColor"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.942" />
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.908"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 </android.support.constraint.ConstraintLayout>

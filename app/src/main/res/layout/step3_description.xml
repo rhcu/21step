@@ -51,28 +51,28 @@
         android:layout_width="86dp"
         android:layout_height="87dp"
         app:srcCompat="@drawable/step3"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="59dp"
+        android:layout_marginTop="8dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="75dp"
         android:layout_height="85dp"
         app:srcCompat="@drawable/step3_2"
-        app:layout_constraintLeft_toRightOf="@+id/imageView6"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.547" />
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -84,11 +84,11 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.397"
-        app:layout_constraintVertical_bias="0.937" />
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintVertical_bias="0.963" />
 
     <TextView
         android:id="@+id/textView"
@@ -136,11 +136,11 @@
         android:background="@drawable/circled_corner_button"
         android:text="@string/info"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.661"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.423" />
+        app:layout_constraintVertical_bias="0.433" />
 
     <ImageView
         android:id="@+id/imageView7"

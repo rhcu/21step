@@ -19,7 +19,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.0">
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/app_name"
@@ -62,16 +62,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginRight="31dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:textColor="@color/titleColor"
         android:textStyle="bold"
         android:text="Шаг 21"
         android:textSize="13sp"
-        app:layout_constraintRight_toLeftOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3" />
+        app:layout_constraintVertical_bias="0.575"
+        app:layout_constraintRight_toRightOf="@+id/imageView3"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.04" />
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -79,17 +82,17 @@
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
         android:textColor="@color/titleColor"
         android:textStyle="bold"
         android:text="Информация"
         android:textSize="13sp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_constraintHorizontal_bias="0.801"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/buttonClear"
@@ -103,15 +106,15 @@
         android:textColor="@color/textColor"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintRight_toRightOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="265dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
@@ -122,10 +125,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/buttonClear"
         app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintVertical_bias="0.257" />
 
     <TextView
         android:id="@+id/textView7"
@@ -139,10 +142,10 @@
         android:textAlignment="center"
         android:textColor="@color/textColor"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/my_toolbar"
-        app:layout_constraintVertical_bias="0.692" />
+        app:layout_constraintVertical_bias="0.822"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/buttonClear" />
 </android.support.constraint.ConstraintLayout>

@@ -11,12 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.enotik.a21steps.MainActivity">
+        <activity android:name="com.enotik.a21steps.MainActivity"
+            android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />1
             </intent-filter>
+
         </activity>
         <activity
             android:name="com.enotik.a21steps.RegisterActivity"
@@ -26,8 +29,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.enotik.a21steps.LoginActivity" />
         </activity>
-        <activity android:name="com.enotik.a21steps.LoginActivity" />
-        <activity android:name="com.enotik.a21steps.UserAreaActivity" />
+        <activity android:name="com.enotik.a21steps.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.enotik.a21steps.UserAreaActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name="com.enotik.a21steps.Step1Activity"
             android:parentActivityName="com.enotik.a21steps.Step1Info"
@@ -119,7 +124,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.enotik.a21steps.Step2Info" />
         </activity>
-        `
+
         <activity
             android:name="com.enotik.a21steps.Step2Medium"
             android:parentActivityName="com.enotik.a21steps.Step1Info"
@@ -128,7 +133,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.enotik.a21steps.Step2Info" />
         </activity>
-        `
+
         <activity
             android:name="com.enotik.a21steps.Step3Activity"
             android:parentActivityName="com.enotik.a21steps.Step3Info"
@@ -414,7 +419,8 @@
         </activity>
         <activity
             android:name="com.enotik.a21steps.UserProfile"
-            android:screenOrientation="portrait"></activity>
+
+            android:screenOrientation="portrait"/>
         <activity
             android:name="com.enotik.a21steps.Step9Activity"
             android:parentActivityName="com.enotik.a21steps.Step9Info"
@@ -951,7 +957,7 @@
                 android:value="com.enotik.a21steps.Step21Info" />
         </activity>
 
-        <activity android:name="com.enotik.a21steps.Last"></activity>
+        <activity android:name="com.enotik.a21steps.Last"/>
     </application>
 
 </manifest>

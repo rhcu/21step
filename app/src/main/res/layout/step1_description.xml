@@ -63,16 +63,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/step1_1"
-        app:layout_constraintLeft_toRightOf="@+id/imageView6"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.212"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -84,10 +84,10 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.31"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -138,9 +138,9 @@
         android:background="@drawable/circled_corner_button"
         android:text="@string/info"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.682"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.625" />
 
